@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="" el='icon' href='favicon.ico' type='image/x-icon' />
+    <title>Tulostaulukko</title>
+    <style>
+        body {
+            color: #ffffff;
+        }
+        
+        div.a {
+            text-align: center;
+        }
+    </style>
+    <div class="a">
+        <h1>DD Tulostaulukko ja Aku</h1>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script type="text/javascript" id="mainscript" src="scripts.js"></script>
+</head>
+
+<body>
+    <div>
+        <applet code="Board$Main.class" width="800" height="500"></applet>
+    </div>
+    <a href="#" class="previous round">&#8249;</a>
+    <a href="#" class="next round">&#8250;</a>
+    <div style="margin:auto" class="loader-5 center"><span></span></div>
+    <table id="leaderboard" border="1" </table>
+        <button class="tablink" onclick="openPage('Ylläri', this, 'grey')">Ylläri</button>
+        <button class="tablink" onclick="openPage('Monikulttuurisuus', this, 'grey')" id="defaultOpen">Ajan rakenne on muuttumassa</button>
+        <button class="tablink" onclick="openPage('Pirkka', this, 'grey')">Pirkka</button>
+        <div id="Ylläri" class="tabcontent">
+            <img src="akuhuutista.jpg" alt="Aku">
+            <p><a href="https://ylilauta.org/sekalainen/79068196">Aku.pdf</a></p>
+        </div>
+        <div id="Monikulttuurisuus" class="tabcontent">
+            <img src="ajanrakenne.jpg" alt="Aku">
+            <p>Simuloidulla todellisuudella tarkoitetaan tilaa, jossa koettu todellisuus tuotetaan keinotekoisesti esimerkiksi tietokoneen avulla, jolloin simuloitua maailmaa ei pysty erottamaan ”todellisesta” maailmasta. Simuloidussa todellisuudessa saattaisi olla itsensä olemassaolosta tietoisia mieliä, jotka joko tietävät tai eivät tiedä olevansa simuloidussa todellisuudessa. Nick Bostromin esittämän simulaatiohypoteesin mukaan elämme jo tällä hetkellä simulaatiossa. Simulaatiohypoteesilla on yhteisiä piirteitä uniargumentin ja Platonin luolavertauksen kanssa.</p>
+        </div>
+        <div id="Pirkka" class="tabcontent">
+            <img src="hyvästiaku.jpg" alt="Aku">
+            <p>Elämän vaikeita aikoja.</p>
+        </div>
+        <div id="Natsi" class="tabcontent">
+            <img src="natsiaku.jpg" alt="Aku">
+            <p>Der Fuehrer’s Face (suom. Führerin kasvot) on vuonna 1943 valmistunut lyhyt piirroselokuva, jonka on tuottanut The Walt Disney Company. Elokuvan työnimenä oli Donald Duck in Nutzi Land. Kyseessä on toisen maailmansodan aikainen sotapropagandaelokuva, joka pilkkaa natsi-Saksaa. Lyhytelokuvan pääosassa on Aku Ankka. Der Fuehrer’s Face voitti vuonna 1943 parhaan lyhytanimaation Oscar-palkinnon.</p>
+        </div>
+</body>
+
+</html>
